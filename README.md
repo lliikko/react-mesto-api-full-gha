@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.28.12
+IPv4 158.160.28.12
 
 Frontend https://angelikayang.nomoreparties.co/
 
