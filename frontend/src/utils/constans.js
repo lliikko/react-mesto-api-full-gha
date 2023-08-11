@@ -1,5 +1,5 @@
 export const apiConfig = {
-  url: "http://api.angelikayang.nomoreparties.co",
+  url: "https://api.angelikayang.nomoreparties.co",
   headers: {
     "Content-Type": "application/json",
   },

@@ -85,7 +85,7 @@ class Api {
   }
 }
 const api = new Api({
-  url: "http://api.angelikayang.nomoreparties.co",
+  url: "https://api.angelikayang.nomoreparties.co",
   headers: {
     "Content-Type": "application/json",
   },

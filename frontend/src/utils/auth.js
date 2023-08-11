@@ -1,4 +1,4 @@
-export const BASE_URL = "http://api.angelikayang.nomoreparties.co";
+export const BASE_URL = "https://api.angelikayang.nomoreparties.co";
 
 function checkError(res) {
   if (res.ok) {
