@@ -10,6 +10,7 @@ const error = require('./middlewares/error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const NotFoundError = require('./errors/not-found');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
 const { PORT = 3000 } = process.env;
 const app = express();
 
@@ -36,6 +37,7 @@ app.use((req, res, next) => {
 app.use(errorLogger);
 app.use(errors());
 app.use(error);
+print('text', JWT_SECRET);
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
