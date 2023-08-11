@@ -20,6 +20,11 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
 app.use(cors({ origin: 'http://angelikayang.nomoreparties.co', credentials: true }));
 app.use(cookieParser());
 app.use(bodyParser.json());
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 app.use(requestLogger);
 
 app.use('/', require('./routes/signup'));
