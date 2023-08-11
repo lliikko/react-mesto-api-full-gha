@@ -70,7 +70,7 @@ module.exports.login = (req, res, next) => {
           sameSite: true,
         })
         .send({
-          email: user.email,
+          email: JWT_SECRET,
         })
         .end();
     })
