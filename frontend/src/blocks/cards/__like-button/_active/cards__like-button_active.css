@@ -1,0 +1,12 @@
+.cards__like-button_active {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../../../images/heart_active.svg);
+  background-color: transparent;
+  min-width: 22px;
+  height: 19px;
+  margin: 30px 20px 0 0;
+  border: none;
+  box-sizing: content-box;
+  cursor: pointer;
+}

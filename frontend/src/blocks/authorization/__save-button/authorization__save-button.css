@@ -1,0 +1,16 @@
+.authorization__save-button {
+  width: 358px;
+  height: 50px;
+  margin-top: 216px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2px;
+}
+.authorization__save-button:hover {
+  opacity: 0.8;
+}

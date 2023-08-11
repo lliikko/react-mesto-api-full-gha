@@ -1,0 +1,15 @@
+.profile__avatar {
+  grid-area: avatar;
+  width: 120px;
+  height: 120px;
+  margin-right: 30px;
+  background-image: url(../../../images/editav.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__avatar {
+    margin: 0 auto;
+  }
+}

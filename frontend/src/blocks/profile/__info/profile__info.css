@@ -1,0 +1,18 @@
+.profile__info {
+  grid-area: info;
+  max-width: 336px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name button"
+    "text .";
+}
+@media screen and (max-width: 767px) {
+  .profile__info {
+    max-width: 282px;
+    margin: 26px 19px 36px 19px;
+    grid-template-areas:
+      "name button"
+      "text text";
+  }
+}

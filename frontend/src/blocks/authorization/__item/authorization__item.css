@@ -1,0 +1,16 @@
+.authorization__item {
+  background-color: black;
+  color: white;
+  width: 358px;
+  padding-bottom: 13px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.authorization__item:last-of-type {
+  margin-bottom: 0;
+}

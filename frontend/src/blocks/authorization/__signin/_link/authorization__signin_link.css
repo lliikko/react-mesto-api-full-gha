@@ -1,0 +1,8 @@
+.authorization__signin_link {
+  text-decoration: none;
+  margin-left: 4px;
+  color: white;
+}
+.authorization__signin_link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
