@@ -10,7 +10,7 @@ const error = require('./middlewares/error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const NotFoundError = require('./errors/not-found');
 
-const { PORT = 5000 } = process.env;
+const { PORT = 3000 } = process.env;
 const app = express();
 
 // подключаемся к серверу mongo
