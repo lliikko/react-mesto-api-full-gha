@@ -45,7 +45,7 @@ function App() {
     const data = api.getCards();
     data
       .then((card) => {
-        setCards(card.reverse());
+        setCards(card);
       })
       .catch((err) => console.log(err));
     }
