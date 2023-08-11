@@ -85,9 +85,8 @@ class Api {
   }
 }
 const api = new Api({
-  url: "http://localhost:5000",
+  url: "http://api.angelikayang.nomoreparties.co",
   headers: {
-    authorization: "205e22e2-b113-4435-a34d-89a291a0c436",
     "Content-Type": "application/json",
   },
 });
