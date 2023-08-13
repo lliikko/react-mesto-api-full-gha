@@ -76,6 +76,15 @@ module.exports.login = (req, res, next) => {
     })
     .catch(next);
 };
+module.exports.signout = (req, res) => {
+  res.cookie('jwt', '*', {
+    maxAge: 10,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'none',
+  })
+    .send({ message: 'OK' });
+};
 
 module.exports.getUserById = (req, res, next) => {
   const { userId } = req.params;
