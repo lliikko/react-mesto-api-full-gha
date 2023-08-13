@@ -50,7 +50,7 @@ export const checkToken = () => {
     .then(checkError)
 };
 export const signout = () => {
-  return fetch(`${BASE_URL}/logout`, {
+  return fetch(`${BASE_URL}/signout`, {
     method: 'GET',
     credentials: 'include',
     headers: {
