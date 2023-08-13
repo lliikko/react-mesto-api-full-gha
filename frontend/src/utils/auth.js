@@ -49,3 +49,14 @@ export const checkToken = () => {
   })
     .then(checkError)
 };
+export const signout = () => {
+  return fetch(`${BASE_URL}/logout`, {
+    method: 'GET',
+    credentials: 'include',
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+  })
+  .then(checkError)
+}

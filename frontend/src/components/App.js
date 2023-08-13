@@ -168,11 +168,15 @@ function App() {
     setIsLoggedIn(true);
   };
 
-  function handleSignOut() {
-    Cookies.remove('jwt', { path: '/'});
-    setIsLoggedIn(false);
-    navigate("/sign-in", { replace: true });
-  }
+  const handleSignOut = () => {
+    auth
+      .signout()
+      .then(() => {
+      setIsLoggedIn(false);
+      navigate("/sign-in", { replace: true });
+    })
+    .catch((err) => console.log(err));
+  };
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
