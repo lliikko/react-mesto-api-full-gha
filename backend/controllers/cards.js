@@ -21,10 +21,6 @@ module.exports.createCard = (req, res, next) => {
         next(new BadRequestError('Переданы некорректные данные'));
         return;
       }
-      if (err.name === 'DocumentNotFoundError') {
-        next(new NotFoundError('Карточка не найдена'));
-        return;
-      }
       next(err);
     });
 };
