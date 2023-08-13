@@ -11,14 +11,17 @@ module.exports.getCards = (req, res, next) => {
 
 module.exports.createCard = (req, res, next) => {
   const { name, link } = req.body;
-  const userId = req.user._id;
-  Card.create({ name, link, owner: userId })
+  Card.create({ name, link, owner: req.user._id })
     .then((card) => res.send({
-      _id: card._id, name: card.name, link: card.link, likes: [], owner: userId,
+      _id: card._id, name: card.name, link: card.link, likes: [],
     }))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         next(new BadRequestError('Переданы некорректные данные'));
+        return;
+      }
+      if (err.name === 'DocumentNotFoundError') {
+        next(new NotFoundError('Карточка не найдена'));
         return;
       }
       next(err);
